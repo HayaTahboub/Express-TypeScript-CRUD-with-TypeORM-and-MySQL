@@ -39,9 +39,7 @@ const updateCustomer = async (payLoad: Customer, id: number) => {
 const createCustomer = async (payLoad: Customer) => {
     const customer = await Customer.findOne({
         where: {
-            customerName: payLoad.customerName,
-            mobilePhone: payLoad.mobilePhone,
-            customerBalance: payLoad.customerBalance
+            mobilePhone: payLoad.mobilePhone
         }
     })
     if (customer) {
