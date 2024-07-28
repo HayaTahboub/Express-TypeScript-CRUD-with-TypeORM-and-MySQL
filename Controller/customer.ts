@@ -1,6 +1,6 @@
 import { Request, Response } from "express"
-import { Customer } from "../Database/entities/Customer.js"
-import { AppError } from "../Errors/AppError.js";
+import { Customer } from "../db/entities/Customer.js"
+import { AppError } from "../errors/AppError.js";
 
 const getAllCustomer = async (req: Request, res: Response) => {
     const customers = await Customer.find()

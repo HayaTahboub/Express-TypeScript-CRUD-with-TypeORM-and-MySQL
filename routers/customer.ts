@@ -1,5 +1,5 @@
 import { Router, Request, Response, NextFunction } from "express"
-import { createCustomer, deleteCustomer, getAllCustomer, getSingleCustomer, updateCustomer } from "../Controller/customer.js"
+import { createCustomer, deleteCustomer, getAllCustomer, getSingleCustomer, updateCustomer } from "../controller/customer.js"
 
 const router = Router()
 

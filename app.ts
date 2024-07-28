@@ -1,7 +1,7 @@
 import express from 'express';
 import env from 'dotenv';
-import { customErrorHandler, DefaultErrorHandler } from "./Middleware/errorHandler.js"
-import AppDataSource from "./Database/dbConfig.js";
+import { customErrorHandler, DefaultErrorHandler } from "./middleware/errorHandler.js"
+import AppDataSource from "./db/dbConfig.js";
 import customerRouter from "./routers/customer.js"
 
 const app = express();
